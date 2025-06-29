@@ -677,6 +677,27 @@
         btn.style.transform = 'translateY(0) scale(1)';
       });
     });
+
+    // Game card click handlers
+    const gameLinks = {
+      'Bad Ice Cream 2': 'https://kdata1.com/2022/11/bad-ice-cream-2/',
+      'Bad Ice Cream 3': 'https://kdata1.com/2022/12/bad-ice-cream-3/'
+    };
+
+    document.querySelectorAll('.game-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const gameTitle = card.querySelector('h4').textContent;
+        const gameUrl = gameLinks[gameTitle];
+        
+        if (gameUrl) {
+          // Open game in new tab
+          window.open(gameUrl, '_blank');
+        }
+      });
+      
+      // Add click cursor style
+      card.style.cursor = 'pointer';
+    });
   </script>
 </body>
 </html>
