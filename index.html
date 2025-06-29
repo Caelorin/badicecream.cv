@@ -11,6 +11,15 @@
   <meta property="og:description" content="Experience the classic Bad Ice Cream arcade puzzle game online. Control ice cream characters and solve challenging levels!" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://badicecream.cv" />
+  
+  <!-- Hreflang tags for multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://badicecream.cv/" />
+  <link rel="alternate" hreflang="de" href="https://badicecream.cv/de/" />
+  <link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/" />
+  <link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/" />
+  <link rel="alternate" hreflang="es" href="https://badicecream.cv/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://badicecream.cv/" />
+  
   <!-- Google Font -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -228,6 +237,17 @@
       <h1 class="text-4xl font-bold orbitron neon-text-premium">Bad Ice Cream</h1>
     </div>
     <div class="flex items-center space-x-4">
+      <!-- Language Navigation -->
+      <div class="flex items-center space-x-2 mr-4">
+        <span class="text-sm text-gray-400">🌐</span>
+        <div class="flex space-x-1">
+          <a href="/" class="px-2 py-1 text-sm font-semibold text-cyan-400 bg-cyan-400/20 rounded border border-cyan-400/30">EN</a>
+          <a href="/de/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">DE</a>
+          <a href="/fr/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">FR</a>
+          <a href="/ja/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">JA</a>
+          <a href="/es/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">ES</a>
+        </div>
+      </div>
       <!-- User icon -->
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="8" r="4" stroke="url(#iceGradient)" stroke-width="2"/>
@@ -362,7 +382,7 @@
           <div class="flex justify-center">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg">
               <!-- Bad Ice Cream 2 -->
-              <div class="game-card bg-black/30 rounded-lg p-4 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group">
+              <a href="bad-ice-cream-2.html" class="game-card bg-black/30 rounded-lg p-4 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group block">
                 <div class="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg mb-3 flex items-center justify-center mx-auto relative overflow-hidden">
                   <div class="text-3xl group-hover:scale-110 transition-transform duration-300">🍦</div>
                 </div>
@@ -374,10 +394,10 @@
                     <span class="px-2 py-0.5 bg-pink-500/20 text-pink-300 text-xs rounded-full">Enhanced</span>
                   </div>
                 </div>
-              </div>
+              </a>
               
               <!-- Bad Ice Cream 3 -->
-              <div class="game-card bg-black/30 rounded-lg p-4 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group">
+              <a href="bad-ice-cream-3.html" class="game-card bg-black/30 rounded-lg p-4 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group block">
                 <div class="w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-lg mb-3 flex items-center justify-center mx-auto relative overflow-hidden">
                   <div class="text-3xl group-hover:scale-110 transition-transform duration-300">🧊</div>
                 </div>
@@ -389,7 +409,7 @@
                     <span class="px-2 py-0.5 bg-blue-500/20 text-blue-300 text-xs rounded-full">Advanced</span>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
