@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>バッドアイスクリーム3 - オンラインでプレイ</title>
-  <meta name="description" content="バッドアイスクリーム3を無料でオンラインでプレイ！" />
+  <title>バッドアイスクリーム3：ブロック解除ゲーム、無料でオンラインプレイ</title>
+  <meta name="description" content="公式のバッドアイスクリーム3ゲームをオンラインでプレイ—無料＆ブロック解除！新しいレベル、敵、そして機能を備えた究極の挑戦。ダウンロードは不要です。" />
+  <meta name="keywords" content="バッドアイスクリーム3, バッドアイスクリーム3ブロック解除, バッドアイスクリームゲーム, バッドアイスクリーム3, ニトロムゲーム, バッドアイスクリーム3ポキ" />
   <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="バッドアイスクリーム3 - 究極の挑戦" />
+  <meta property="og:description" content="バッドアイスクリーム3で最後の冒険に挑もう。ブロック解除版をオンラインで無料でプレイして、新しいレベルや敵に立ち向かえ！" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://badicecream.cv/ja/bad-ice-cream-3.html" />
   
   <!-- Hreflang tags for multilingual SEO -->
   <link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html" />
@@ -15,13 +20,13 @@
   <link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html" />
   <link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html" />
   
-  <link rel="canonical" href="https://badicecream.cv/ja/bad-ice-cream-3.html" />
-  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  
   <!-- Google Font -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYPEN62413"></script>
@@ -32,77 +37,231 @@
     gtag('config', 'G-WYPEN62413');
   </script>
   
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "s6hitcw2je");
+  </script>
+
   <style>
-    :root {
-      --neon-cyan: #00f5ff;
-      --neon-purple: #bf00ff;
-      --neon-pink: #ff0080;
-      --dark-bg: #0a0a0f;
-      --card-bg: #161620;
-    }
     body { 
-      font-family: 'Rajdhani', sans-serif; 
-      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%); 
-      min-height: 100vh; 
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #0f172a; /* bg-slate-900 */
     }
+    
     .orbitron { font-family: 'Orbitron', monospace; }
+
+    .hero-pattern {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 2rem 2rem;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1e293b; /* slate-800 */ }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; /* slate-700 */ }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; /* slate-600 */ }
   </style>
 </head>
-<body class="text-white min-h-screen">
-  <header class="relative z-10 bg-black/40 backdrop-blur-lg border-b border-cyan-400/20 shadow-lg">
+<body class="text-slate-300 min-h-screen bg-slate-900">
+  <!-- Background grid -->
+  <div class="fixed inset-0 hero-pattern pointer-events-none"></div>
+  
+  <!-- Top navigation -->
+  <header class="sticky top-0 z-20 bg-slate-900/70 backdrop-blur-lg border-b border-slate-700 shadow-lg">
     <div class="container mx-auto px-6">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
-          <a href="index.html">
-            <img src="../images/logo.webp" alt="Bad Ice Cream Logo" class="h-10 w-auto" />
-          </a>
+          <img src="../images/logo.webp" alt="バッドアイスクリームのロゴ" class="h-10 w-auto" />
         </div>
+        
         <nav class="hidden md:flex items-center space-x-8">
-          <a href="index.html" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">ホーム</a>
-          <a href="bad-ice-cream-2.html" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">バッドアイスクリーム2</a>
-          <a href="bad-ice-cream-3.html" class="text-white hover:text-cyan-400 transition-colors font-medium">バッドアイスクリーム3</a>
+          <a href="index.html" class="text-slate-300 hover:text-blue-400 transition-colors font-medium">ホーム</a>
+          <a href="bad-ice-cream-2.html" class="text-slate-300 hover:text-blue-400 transition-colors font-medium">バッドアイスクリーム 2</a>
+          <a href="bad-ice-cream-3.html" class="text-white hover:text-blue-400 transition-colors font-medium">バッドアイスクリーム 3</a>
         </nav>
+        
+        <div class="flex items-center space-x-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.002 6.002 0 0111.336 0H4.332zM15.668 9.973a6.003 6.003 0 01-11.336 0h11.336zM10 16a5.98 5.98 0 004.805-2.916A5.98 5.98 0 0010 9.973V16zm-4.805-2.916A5.98 5.98 0 0010 16v-6.084A5.98 5.98 0 005.195 13.084z" clip-rule="evenodd" /></svg>
+            </span>
+            <select class="bg-slate-800 border border-slate-600 rounded-md px-3 py-1 text-sm text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" onchange="window.location.href = this.value;">
+              <option value="/">EN</option>
+              <option value="/de/bad-ice-cream-3.html">DE</option>
+              <option value="/fr/bad-ice-cream-3.html">FR</option>
+              <option value="bad-ice-cream-3.html" selected>JA</option>
+              <option value="/es/bad-ice-cream-3.html">ES</option>
+            </select>
+          </div>
+          
+          <button class="p-2 rounded-lg bg-slate-800 border border-slate-600 hover:border-blue-500 transition-all group">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400 group-hover:text-blue-400 transition-colors"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+          
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-800 border border-slate-600 hover:border-blue-500 transition-all">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-700 bg-slate-800/90 backdrop-blur-lg">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block px-3 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">ホーム</a>
+          <a href="bad-ice-cream-2.html" class="block px-3 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">バッドアイスクリーム 2</a>
+          <a href="bad-ice-cream-3.html" class="block px-3 py-2 text-white hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">バッドアイスクリーム 3</a>
+        </div>
       </div>
     </div>
   </header>
-  
-  <main class="relative z-10 container mx-auto px-8 pt-6">
+
+  <main class="relative z-10 container mx-auto px-6 pt-6">
+    <div class="text-center pt-4 pb-8">
+      <h1 class="text-4xl md:text-5xl font-bold orbitron text-white">バッドアイスクリーム3：究極の凍てつく冒険</h1>
+      <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">最終的な挑戦に立ち向かえ！新しいパワー、複雑な迷路、そしてこれまでで最も悪い敵。ブロック解除されたフルバージョンを無料でプレイ。</p>
+    </div>
+
     <section class="w-full">
       <iframe
         id="gameFrame"
-        src="https://5b5f8af1-684b-4557-a71b-a865cf564b1d.poki-gdn.com/6ec8e02b-d77d-442e-806b-91bce473bce4/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fpoki.com%2F&tag=pg-260a"
-        class="w-full rounded-2xl bg-black"
-        style="aspect-ratio: 1200 / 703;"
+        src="https://5b5f8af1-684b-4557-a71b-a865cf564b1d.poki-gdn.com/6ec8e02b-d77d-442e-806b-91bce473bce4/index.html"
+        class="w-full rounded-t-xl bg-black"
+        style="height: 580px; border: 1px solid #334155;"
         frameborder="0"
         allowfullscreen
+        title="バッドアイスクリーム3ゲーム"
+        loading="lazy"
       ></iframe>
     </section>
-    <div class="mt-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-lg p-4 flex items-center justify-between text-white">
+    
+    <div class="bg-slate-800/80 backdrop-blur-sm border-x border-b border-slate-700 rounded-b-xl p-4 flex items-center justify-between text-white">
       <div class="flex items-center space-x-4">
-        <img src="../images/favicon-32x32.png" alt="Bad Ice-Cream Icon" class="w-12 h-12 rounded-lg border-2 border-cyan-400/50">
+        <img src="../images/logo-noword.webp" alt="バッドアイスクリームのアイコン" class="w-12 h-12 rounded-lg border-2 border-slate-600">
         <div>
-          <h3 class="font-bold text-lg orbitron">バッドアイスクリーム3</h3>
-          <p class="text-sm text-gray-400">制作者: Nitrome</p>
+          <h3 class="font-bold text-lg orbitron text-white">バッドアイスクリーム3</h3>
+          <p class="text-sm text-slate-400">制作：Nitrome</p>
         </div>
       </div>
-      <div class="flex items-center space-x-6 text-gray-300">
+      <div class="flex items-center space-x-6 text-slate-300">
         <button class="flex items-center space-x-2 hover:text-white transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10.5a1.5 1.5 0 1 1 3 0v6a1.5 1.5 0 0 1-3 0v-6zM6 10.333V19a1 1 0 0 0 1 1h6.836a1 1 0 0 0 .984-.822l1.93-7.111-1.12-1.122a2.36 2.36 0 0 0-3.336 0l-1.12 1.122V4.5A1.5 1.5 0 0 0 10 3H6a1 1 0 0 0-1 1v6.333H2V10.5h3V4.5A2.5 2.5 0 0 1 7.5 2H10a2.5 2.5 0 0 1 2.5 2.5v2.859l1.12-1.121a3.36 3.36 0 0 1 4.752 0l1.12 1.121 1.93 7.111A2 2 0 0 1 16.836 20H7a2 2 0 0 1-2-2v-8.667H2a1 1 0 1 1 0-2h3z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75A2.25 2.25 0 0 1 16.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M6.633 10.5 3 14.133a9.023 9.023 0 0 0 1.885 1.885l3.748-3.748M6.633 10.5h.007v.007h-.007v-.007Z" /></svg>
           <span class="font-semibold">1.8M</span>
         </button>
         <button class="flex items-center space-x-2 hover:text-white transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M18 9.5a1.5 1.5 0 1 1-3 0v-6a1.5 1.5 0 0 1 3 0v6zM14 9.667V1a1 1 0 0 0-1-1H6.164a1 1 0 0 0-.984.822l-1.93 7.111 1.12 1.122a2.36 2.36 0 0 0 3.336 0l-1.12-1.122V15.5A1.5 1.5 0 0 0 10 17H14a1 1 0 0 0 1-1V9.667h3V9.5h-3V15.5A2.5 2.5 0 0 1 12.5 18H10a2.5 2.5 0 0 1-2.5-2.5v-2.859l-1.12 1.121a3.36 3.36 0 0 1-4.752 0l-1.12-1.121L2.164.822A2 2 0 0 1 4.164 0H13a2 2 0 0 1 2 2v7.667h3a1 1 0 1 1 0 2h-3z"></path></svg>
-          <span class="font-semibold">125.1K</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18.75 18.75L15.75 15.75m-4.5-8.25L5.25 1.5M17.414 6.586L6.586 17.414" /></svg>
+          <span class="font-semibold">1.1K</span>
         </button>
-        <button class="hover:text-white transition-colors">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M5 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14l-5-3.125L5 18V4z"></path></svg>
+        <button class="flex items-center space-x-2 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" /></svg>
+          <span class="font-semibold">56.8K</span>
         </button>
       </div>
     </div>
+
+    <div class="mt-12 space-y-12">
+
+      <section id="release-date" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">バッドアイスクリーム3のリリース日</h2>
+        <div class="text-lg leading-relaxed space-y-4 text-slate-300">
+          <p>壮大な三部作は、<strong>2013年8月1日</strong>に<strong>バッドアイスクリーム3</strong>のリリースで完結しました。最終作として、シリーズで最も機能が豊富で挑戦的なゲームになるように設計されました。</p>
+          <p>Nitromeは全力を尽くし、新しいアイスクリームのフレーバー、多種多様な新しい敵、そしてプレイヤーの戦略的思考を限界まで押し上げるレベルデザインを導入しました。そのリリースは、愛されたブラウザゲームサーガの集大成を示しました。</p>
+        </div>
+      </section>
+
+      <section id="versions" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">バッドアイスクリーム3ブロック解除＆特徴</h2>
+        <div class="text-lg leading-relaxed space-y-8 text-slate-300">
+            <p>バッドアイスクリーム3は、シリーズの究極の進化形です。ここで完全なブロック解除三部作をプレイして、最終章がどのように基準を引き上げたかをご覧ください。</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="index.html" class="bg-slate-800 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🏆</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">バッドアイスクリーム 1</h3>
+                  <p class="text-xs text-slate-400">オリジナルの40レベルクラシック</p>
+                </a>
+                <a href="bad-ice-cream-2.html" class="bg-slate-800 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🍦</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">バッドアイスクリーム 2</h3>
+                  <p class="text-xs text-slate-400">新レベルと強化されたゲームプレイ</p>
+                </a>
+                <a href="bad-ice-cream-3.html" class="bg-slate-800 rounded-lg p-4 border-2 border-blue-500 hover:border-blue-400 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🧊</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">バッドアイスクリーム 3</h3>
+                  <p class="text-xs text-slate-400">究極の氷の冒険</p>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">究極の敵リスト</h3>
+                  <p class="text-slate-400">巨大なボスやトリッキーな新能力を持つ敵を含む、シリーズで最も多様な敵に遭遇します。</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">新しいアイスクリームのフレーバー</h3>
+                  <p class="text-slate-400">それぞれが独自のクールなデザインを持つ、新しいアンロック可能なアイスクリームキャラクターでプレイをアンロックします。</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">砂漠がテーマのレベル</h3>
+                  <p class="text-slate-400">流砂や転がるサボテンなどのユニークな障害物がある、まったく新しい砂漠をテーマにしたステージの世界を探検してください。</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <section id="download" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">バッドアイスクリーム3のダウンロード</h2>
+        <div class="text-lg leading-relaxed space-y-4 text-slate-300">
+          <p><strong>バッドアイスクリーム3をダウンロード</strong>するのを待つ必要はありません。当サイトでは、ブラウザで直接、完全版でブロック解除されたゲームに即座にアクセスできます。サーガの最終章を楽しむための最も便利で安全な方法です。</p>
+          <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+              <h3 class="font-semibold text-blue-400 mb-3 text-xl">オンラインで即座にプレイ：</h3>
+              <ul class="space-y-2 text-slate-400">
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>ダウンロード不要：</strong> すぐにアクションを開始できます。</li>
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>ブロック解除バージョン：</strong> どこからでも制限なくプレイできます。</li>
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>安全でセキュア：</strong> インストールするファイルがないため、リスクはありません。</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="walkthrough" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">バッドアイスクリーム3のウォークスルー</h2>
+        <div class="space-y-10">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-white text-center">全レベルのビデオウォークスルー</h3>
+              <p class="text-lg text-slate-300 max-w-3xl mx-auto mb-6 text-center">最終章は最も厳しいです。この完全なビデオウォークスルーは、バッドアイスクリーム3のすべてのレベルを案内します。</p>
+              <div class="relative max-w-3xl w-full mx-auto">
+                <div class="border border-slate-700 rounded-2xl p-2 bg-slate-900/50">
+                  <iframe class="rounded-xl" width="100%" height="400" src="https://www.youtube.com/embed/Rgzjg3QZV_s" title="Bad Ice Cream 3 Gameplay Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-white text-center">ゲームプレイのスクリーンショット</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="../images/GameScreenshot1.jpg" alt="バッドアイスクリーム3のゲームプレイ画面1" class="w-full rounded-md"></div>
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="../images/GameScreenshot2.jpg" alt="バッドアイスクリーム3のゲームプレイ画面2" class="w-full rounded-md"></div>
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="../images/GameScreenshot3.jpg" alt="バッドアイスクリーム3のゲームプレイ画面3" class="w-full rounded-md"></div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </div>
   </main>
   
-  <footer class="relative z-10 mt-12 py-8 text-center text-gray-400 text-sm">
-    <p>&copy; 2024 バッドアイスクリームゲーム. Nitromeによるゲーム.</p>
+  <footer class="relative z-10 container mx-auto px-6 py-8 mt-12">
+    <div class="border-t border-slate-700 pt-8 text-center text-slate-400 text-sm">
+      <p>&copy; 2024 Bad Ice Cream CV. 全著作権所有。ゲーム制作：Nitrome。</p>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>

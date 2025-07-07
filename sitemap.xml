@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Bad Ice Cream 1 (Homepage) -->
+  <url>
+    <loc>https://badicecream.cv/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/de/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/es/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/fr/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/ja/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/"/>
+  </url>
+
+  <!-- Bad Ice Cream 2 -->
+  <url>
+    <loc>https://badicecream.cv/bad-ice-cream-2.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+  </url>
+    <url>
+    <loc>https://badicecream.cv/de/bad-ice-cream-2.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/es/bad-ice-cream-2.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/fr/bad-ice-cream-2.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/ja/bad-ice-cream-2.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-2.html"/>
+  </url>
+
+  <!-- Bad Ice Cream 3 -->
+  <url>
+    <loc>https://badicecream.cv/bad-ice-cream-3.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/de/bad-ice-cream-3.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/es/bad-ice-cream-3.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/fr/bad-ice-cream-3.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+  </url>
+  <url>
+    <loc>https://badicecream.cv/ja/bad-ice-cream-3.html</loc>
+    <lastmod>2024-07-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://badicecream.cv/de/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://badicecream.cv/es/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://badicecream.cv/fr/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://badicecream.cv/ja/bad-ice-cream-3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://badicecream.cv/bad-ice-cream-3.html"/>
+  </url>
+
+</urlset> 
