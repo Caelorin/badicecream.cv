@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bad Ice Cream Game - Play Free Online | 40 Levels, 4 Players, Unblocked</title>
-  <meta name="description" content="Play Bad Ice Cream online free! Master 40 challenging levels, control ice cream characters, collect fruits & create ice blocks. Supports up to 4 players. Unblocked arcade puzzle game by Nitrome." />
+  <title>Bad Ice Cream: Play Free, Online & Unblocked Game</title>
+  <meta name="description" content="Play the official Bad Ice Cream game online—free and unblocked! Team up with friends in multiplayer mode or go solo to beat all 40 levels of this classic puzzler." />
   <meta name="keywords" content="bad ice cream, bad ice cream game, ice cream game, arcade puzzle, online games, free games, nitrome games" />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Bad Ice Cream Game - Play Free Online" />
@@ -21,8 +21,10 @@
   <link rel="alternate" hreflang="x-default" href="https://badicecream.cv/" />
   
   <!-- Google Font -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
   <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -32,7 +34,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-WYPEN62413');
   </script>
   
@@ -44,934 +45,323 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "s6hitcw2je");
   </script>
+
   <style>
-    :root {
-      --neon-cyan: #00f5ff;
-      --neon-purple: #bf00ff;
-      --neon-pink: #ff0080;
-      --dark-bg: #0a0a0f;
-      --card-bg: #161620;
-    }
-    
     body { 
       font-family: 'Rajdhani', sans-serif;
-      background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-      min-height: 100vh;
+      background-color: #0f172a; /* bg-slate-900 */
     }
     
     .orbitron { font-family: 'Orbitron', monospace; }
-    
-    /* Advanced neon effects */
-    .neon-border-premium {
-      background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-                  linear-gradient(45deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink)) border-box;
-      border: 2px solid transparent;
-      border-radius: 16px;
-      position: relative;
-      overflow: hidden;
+
+    /* A subtle background pattern can look professional */
+    .hero-pattern {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 2rem 2rem;
     }
-    
-    .neon-border-premium::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 16px;
-      padding: 2px;
-      background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple), var(--neon-pink));
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: xor;
-      -webkit-mask-composite: xor;
-      z-index: -1;
+
+    /* Custom scrollbar for a polished look */
+    ::-webkit-scrollbar {
+      width: 8px;
     }
-    
-    .neon-glow {
-      box-shadow: 
-        0 0 5px rgba(0, 245, 255, 0.3),
-        0 0 20px rgba(191, 0, 255, 0.2),
-        0 0 35px rgba(255, 0, 128, 0.1);
+    ::-webkit-scrollbar-track {
+      background: #1e293b; /* slate-800 */
     }
-    
-    .neon-text-premium {
-      background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      filter: drop-shadow(0 0 10px rgba(0, 245, 255, 0.5));
+    ::-webkit-scrollbar-thumb {
+      background: #334155; /* slate-700 */
+      border-radius: 4px;
     }
-    
-    .btn-premium {
-      background: linear-gradient(135deg, rgba(0, 245, 255, 0.1), rgba(191, 0, 255, 0.1));
-      border: 1px solid rgba(0, 245, 255, 0.3);
-      backdrop-filter: blur(10px);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .btn-premium:hover {
-      background: linear-gradient(135deg, rgba(0, 245, 255, 0.2), rgba(191, 0, 255, 0.2));
-      border-color: rgba(0, 245, 255, 0.6);
-      box-shadow: 
-        0 0 20px rgba(0, 245, 255, 0.4),
-        0 0 40px rgba(191, 0, 255, 0.2);
-      transform: translateY(-2px);
-    }
-    
-    .grid-pattern {
-      background-image: 
-        linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-    
-    .floating-animation {
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-    
-    .game-frame {
-      border: 2px solid transparent;
-      background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-                  linear-gradient(45deg, var(--neon-cyan), var(--neon-purple)) border-box;
-      border-radius: 20px;
-      position: relative;
-    }
-    
-    /* Loading overlay styles */
-    .loading-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(10, 10, 15, 0.95), rgba(26, 26, 46, 0.95));
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
-      z-index: 10;
-      transition: opacity 0.5s ease-out;
-    }
-    
-    .loading-overlay.hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-    
-    .progress-bar {
-      width: 300px;
-      height: 6px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 3px;
-      overflow: hidden;
-      margin-top: 20px;
-    }
-    
-    .progress-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
-      border-radius: 3px;
-      transition: width 0.3s ease;
-      box-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
-    }
-    
-    .loading-spinner {
-      width: 60px;
-      height: 60px;
-      border: 3px solid rgba(255, 255, 255, 0.1);
-      border-top: 3px solid var(--neon-cyan);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    .loading-text {
-      font-size: 18px;
-      margin-top: 15px;
-      color: var(--neon-cyan);
-      font-weight: 600;
-    }
-    
-    .loading-tip {
-      font-size: 14px;
-      margin-top: 10px;
-      color: rgba(255, 255, 255, 0.7);
-      text-align: center;
-      max-width: 280px;
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569; /* slate-600 */
     }
   </style>
 </head>
-<body class="text-white min-h-screen">
+<body class="text-slate-300 min-h-screen bg-slate-900">
   <!-- Background grid -->
-  <div class="fixed inset-0 grid-pattern opacity-30 pointer-events-none"></div>
+  <div class="fixed inset-0 hero-pattern pointer-events-none"></div>
   
   <!-- Top navigation -->
-  <header class="relative z-10 h-24 flex items-center justify-between px-8 neon-border-premium neon-glow mx-6 mt-6">
-    <div class="flex items-center space-x-4">
-      <!-- Game icon SVG -->
-      <div class="floating-animation">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="iceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#bf00ff;stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <path d="M24 4L30 12H18L24 4Z" fill="url(#iceGradient)"/>
-          <rect x="12" y="12" width="24" height="24" rx="4" fill="url(#iceGradient)" opacity="0.8"/>
-          <circle cx="20" cy="20" r="2" fill="white" opacity="0.9"/>
-          <circle cx="28" cy="28" r="2" fill="white" opacity="0.9"/>
-          <path d="M16 40L20 36H28L32 40H16Z" fill="url(#iceGradient)" opacity="0.6"/>
-        </svg>
-      </div>
-      <h1 class="text-4xl font-bold orbitron neon-text-premium">Bad Ice Cream</h1>
-    </div>
-    <div class="flex items-center space-x-4">
-      <!-- Language Navigation -->
-      <div class="flex items-center space-x-2 mr-4">
-        <span class="text-sm text-gray-400">🌐</span>
-        <div class="flex space-x-1">
-          <a href="/" class="px-2 py-1 text-sm font-semibold text-cyan-400 bg-cyan-400/20 rounded border border-cyan-400/30">EN</a>
-          <a href="/de/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">DE</a>
-          <a href="/fr/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">FR</a>
-          <a href="/ja/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">JA</a>
-          <a href="/es/" class="px-2 py-1 text-sm text-gray-300 hover:text-white hover:bg-white/10 rounded transition-colors">ES</a>
+  <header class="sticky top-0 z-20 bg-slate-900/70 backdrop-blur-lg border-b border-slate-700 shadow-lg">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="images/logo.webp" alt="Bad Ice Cream Logo" class="h-10 w-auto" />
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-white hover:text-blue-400 transition-colors font-medium">Home</a>
+          <a href="bad-ice-cream-2.html" class="text-slate-300 hover:text-blue-400 transition-colors font-medium">Bad Ice Cream 2</a>
+          <a href="bad-ice-cream-3.html" class="text-slate-300 hover:text-blue-400 transition-colors font-medium">Bad Ice Cream 3</a>
+        </nav>
+        
+        <!-- Right side - Language & User -->
+        <div class="flex items-center space-x-4">
+          <!-- Language Selector -->
+          <div class="flex items-center space-x-2">
+            <span class="text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.002 6.002 0 0111.336 0H4.332zM15.668 9.973a6.003 6.003 0 01-11.336 0h11.336zM10 16a5.98 5.98 0 004.805-2.916A5.98 5.98 0 0010 9.973V16zm-4.805-2.916A5.98 5.98 0 0010 16v-6.084A5.98 5.98 0 005.195 13.084z" clip-rule="evenodd" />
+                </svg>
+            </span>
+            <select class="bg-slate-800 border border-slate-600 rounded-md px-3 py-1 text-sm text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500" onchange="changeLanguage(this.value)">
+              <option value="/" selected>EN</option>
+              <option value="/de/">DE</option>
+              <option value="/fr/">FR</option>
+              <option value="/ja/">JA</option>
+              <option value="/es/">ES</option>
+            </select>
+          </div>
+          
+          <!-- User Profile -->
+          <button class="p-2 rounded-lg bg-slate-800 border border-slate-600 hover:border-blue-500 transition-all group">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400 group-hover:text-blue-400 transition-colors">
+              <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+          
+          <!-- Mobile Menu Button -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-slate-800 border border-slate-600 hover:border-blue-500 transition-all">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400">
+              <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
       </div>
-      <!-- User icon -->
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="8" r="4" stroke="url(#iceGradient)" stroke-width="2"/>
-        <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" stroke="url(#iceGradient)" stroke-width="2"/>
-      </svg>
+      
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-700 bg-slate-800/90 backdrop-blur-lg">
+        <div class="px-4 py-3 space-y-2">
+          <a href="/" class="block px-3 py-2 text-white hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">Home</a>
+          <a href="bad-ice-cream-2.html" class="block px-3 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">Bad Ice Cream 2</a>
+          <a href="bad-ice-cream-3.html" class="block px-3 py-2 text-slate-300 hover:text-blue-400 hover:bg-slate-700/50 rounded-lg transition-all">Bad Ice Cream 3</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- Main content -->
-  <main class="relative z-10 container mx-auto px-8 mt-8">
+  <main class="relative z-10 container mx-auto px-6 pt-6">
+    <div class="text-center pt-4 pb-8">
+      <h1 class="text-4xl md:text-5xl font-bold orbitron text-white">Bad Ice Cream: The Ultimate Online Game</h1>
+      <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">Play the complete series online for free. No download required, unblocked for instant fun!</p>
+    </div>
+
     <!-- Central game area -->
     <section class="w-full">
-      <div class="game-frame neon-glow p-4">
-        <!-- Loading overlay -->
-        <div id="loadingOverlay" class="loading-overlay">
-          <div class="loading-spinner"></div>
-          <div class="loading-text">Loading Game...</div>
-          <div class="progress-bar">
-            <div id="progressFill" class="progress-fill" style="width: 0%"></div>
-          </div>
-          <div class="loading-tip">Get ready for ice-cold fun! The game is loading...</div>
-        </div>
-        
-        <iframe
-          id="gameFrame"
-          src="https://www.friv.com/z/games/badicecream/index-x.html"
-          class="w-full rounded-2xl bg-black"
-          style="height: 600px;"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
-      
-      <!-- Game control buttons -->
-      <div class="flex justify-center space-x-4 mt-6">
-        <button
-          id="fullscreenBtn"
-          class="btn-premium px-8 py-3 rounded-full font-semibold orbitron flex items-center space-x-2"
-          aria-label="Play Fullscreen"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" stroke="currentColor" stroke-width="2"/>
-          </svg>
-          <span>FULLSCREEN</span>
-        </button>
-        
-        <button id="restartBtn" class="btn-premium px-8 py-3 rounded-full font-semibold orbitron flex items-center space-x-2">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" stroke="currentColor" stroke-width="2"/>
-            <path d="M3 3v5h5" stroke="currentColor" stroke-width="2"/>
-          </svg>
-          <span>RESTART</span>
-        </button>
-      </div>
-      
-      <!-- Quick Game Controls -->
-      <div class="mt-6">
-        <div class="neon-border-premium neon-glow p-4">
-          <div class="text-center mb-4">
-            <h3 class="text-xl font-bold orbitron neon-text-premium mb-1">Quick Controls & Tips</h3>
-          </div>
-          
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-            <!-- Single Player Controls -->
-            <div class="bg-black/30 rounded-lg p-3 border border-cyan-400/30">
-              <div class="text-center mb-2">
-                <span class="text-cyan-400 text-lg">🎮</span>
-                <h4 class="font-semibold text-cyan-400 text-sm">Player 1</h4>
-              </div>
-              <div class="space-y-1 text-xs">
-                <div class="flex items-center justify-between">
-                  <span>Move:</span>
-                  <kbd class="px-1 py-0.5 text-xs bg-gray-800 rounded">↑↓←→</kbd>
-                </div>
-                <div class="flex items-center justify-between">
-                  <span>Ice:</span>
-                  <kbd class="px-1 py-0.5 text-xs bg-gray-800 rounded">SPACE</kbd>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Multiplayer Controls -->
-            <div class="bg-black/30 rounded-lg p-3 border border-purple-400/30">
-              <div class="text-center mb-2">
-                <span class="text-purple-400 text-lg">👥</span>
-                <h4 class="font-semibold text-purple-400 text-sm">Multiplayer</h4>
-              </div>
-              <div class="space-y-1 text-xs">
-                <div>P2: <kbd class="px-1 py-0.5 bg-gray-800 rounded text-xs">WASD+F</kbd></div>
-                <div>P3: <kbd class="px-1 py-0.5 bg-gray-800 rounded text-xs">IJKL+U</kbd></div>
-                <div>P4: <kbd class="px-1 py-0.5 bg-gray-800 rounded text-xs">8456+1</kbd></div>
-              </div>
-            </div>
-            
-            <!-- Strategy Tips -->
-            <div class="bg-black/30 rounded-lg p-3 border border-pink-400/30">
-              <div class="text-center mb-2">
-                <span class="text-pink-400 text-lg">🧊</span>
-                <h4 class="font-semibold text-pink-400 text-sm">Strategy</h4>
-              </div>
-              <div class="space-y-1 text-xs">
-                <div>• Trap enemies</div>
-                <div>• Freeze cherries</div>
-                <div>• Plan routes</div>
-              </div>
-            </div>
-            
-            <!-- Game Info -->
-            <div class="bg-black/30 rounded-lg p-3 border border-yellow-400/30">
-              <div class="text-center mb-2">
-                <span class="text-yellow-400 text-lg">⏱️</span>
-                <h4 class="font-semibold text-yellow-400 text-sm">Game Info</h4>
-              </div>
-              <div class="space-y-1 text-xs">
-                <div>• <strong>40 levels</strong></div>
-                <div>• <strong>2 min/level</strong></div>
-                <div>• <strong>Up to 4 players</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Recommended Games Section -->
-      <div class="mt-6">
-        <div class="neon-border-premium neon-glow p-4">
-          <div class="text-center mb-4">
-            <h3 class="text-xl font-bold orbitron neon-text-premium mb-1">Continue the Adventure</h3>
-            <p class="text-gray-400 text-sm">Play the complete Bad Ice Cream trilogy!</p>
-          </div>
-          
-          <div class="flex justify-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg">
-              <!-- Bad Ice Cream 2 -->
-              <a href="bad-ice-cream-2.html" class="game-card bg-black/30 rounded-lg p-4 border border-purple-400/30 hover:border-purple-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group block">
-                <div class="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg mb-3 flex items-center justify-center mx-auto relative overflow-hidden">
-                  <div class="text-3xl group-hover:scale-110 transition-transform duration-300">🍦</div>
-                </div>
-                <div class="text-center">
-                  <h4 class="font-bold text-purple-400 text-base mb-1">Bad Ice Cream 2</h4>
-                  <p class="text-xs text-gray-400 mb-2">New levels & enhanced gameplay</p>
-                  <div class="flex justify-center space-x-1">
-                    <span class="px-2 py-0.5 bg-purple-500/20 text-purple-300 text-xs rounded-full">New</span>
-                    <span class="px-2 py-0.5 bg-pink-500/20 text-pink-300 text-xs rounded-full">Enhanced</span>
-                  </div>
-                </div>
-              </a>
-              
-              <!-- Bad Ice Cream 3 -->
-              <a href="bad-ice-cream-3.html" class="game-card bg-black/30 rounded-lg p-4 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 hover:scale-105 cursor-pointer group block">
-                <div class="w-16 h-16 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-lg mb-3 flex items-center justify-center mx-auto relative overflow-hidden">
-                  <div class="text-3xl group-hover:scale-110 transition-transform duration-300">🧊</div>
-                </div>
-                <div class="text-center">
-                  <h4 class="font-bold text-cyan-400 text-base mb-1">Bad Ice Cream 3</h4>
-                  <p class="text-xs text-gray-400 mb-2">Ultimate ice cream adventure</p>
-                  <div class="flex justify-center space-x-1">
-                    <span class="px-2 py-0.5 bg-cyan-500/20 text-cyan-300 text-xs rounded-full">Ultimate</span>
-                    <span class="px-2 py-0.5 bg-blue-500/20 text-blue-300 text-xs rounded-full">Advanced</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <iframe
+        id="gameFrame"
+        src="https://7fb1fd45-24ce-4ade-b5c4-9ee55ec99526.poki-gdn.com/403f9f7f-52b0-4fa1-a4c2-c46883d239b6/index.html"
+        class="w-full rounded-t-xl bg-black"
+        style="height: 580px; border: 1px solid #334155;"
+        frameborder="0"
+        allowfullscreen
+        title="Bad Ice Cream Game Frame"
+      ></iframe>
     </section>
-  </main>
-
-  <!-- Game Tutorial Video Section -->
-  <section class="relative z-10 container mx-auto px-8 mt-12">
-    <div class="neon-border-premium neon-glow p-8">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl font-bold orbitron neon-text-premium mb-4">Bad Ice Cream Gameplay Tutorial</h2>
-        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-          Watch this comprehensive gameplay tutorial to master the art of ice cream strategy! 
-          Learn advanced techniques, discover hidden secrets, and see pro-level strategies in action.
-        </p>
-      </div>
-      
-      <div class="flex justify-center">
-        <div class="relative max-w-4xl w-full">
-          <div class="game-frame neon-glow p-4">
-            <iframe 
-              width="100%" 
-              height="450" 
-              src="https://www.youtube.com/embed/TptbiYnyQ7M?si=z8z9mFOUP68MPCw8" 
-              title="Bad Ice Cream Gameplay Tutorial" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen
-              class="rounded-2xl"
-            ></iframe>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-            <div class="bg-black/20 p-4 rounded-lg border border-cyan-400/20">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-cyan-400">🎯</span>
-                <h3 class="font-semibold text-cyan-400">Strategic Tips</h3>
-              </div>
-              <p class="text-sm text-gray-300">Learn optimal fruit collection routes and enemy avoidance strategies</p>
-            </div>
-            <div class="bg-black/20 p-4 rounded-lg border border-purple-400/20">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-purple-400">🧊</span>
-                <h3 class="font-semibold text-purple-400">Ice Mastery</h3>
-              </div>
-              <p class="text-sm text-gray-300">Master advanced ice block placement and timing techniques</p>
-            </div>
-            <div class="bg-black/20 p-4 rounded-lg border border-pink-400/20">
-              <div class="flex items-center space-x-2 mb-2">
-                <span class="text-pink-400">⚡</span>
-                <h3 class="font-semibold text-pink-400">Speed Runs</h3>
-              </div>
-              <p class="text-sm text-gray-300">Discover speed-running techniques for maximum scores</p>
-            </div>
-          </div>
+    
+    <!-- Status Bar -->
+    <div class="bg-slate-800/80 backdrop-blur-sm border-x border-b border-slate-700 rounded-b-xl p-4 flex items-center justify-between text-white">
+      <!-- Left side -->
+      <div class="flex items-center space-x-4">
+        <img src="images/logo-noword.webp" alt="Bad Ice Cream Icon" class="w-12 h-12 rounded-lg border-2 border-slate-600">
+        <div>
+          <h3 class="font-bold text-lg orbitron text-white">Bad Ice Cream</h3>
+          <p class="text-sm text-slate-400">By: Nitrome</p>
         </div>
+      </div>
+      <!-- Right side -->
+      <div class="flex items-center space-x-6 text-slate-300">
+        <button class="flex items-center space-x-2 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75A2.25 2.25 0 0 1 16.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904M6.633 10.5 3 14.133a9.023 9.023 0 0 0 1.885 1.885l3.748-3.748M6.633 10.5h.007v.007h-.007v-.007Z" />
+          </svg>
+          <span class="font-semibold">1.5M</span>
+        </button>
+        <button class="flex items-center space-x-2 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75A2.25 2.25 0 0 1 16.5 4.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904" transform="scale(1, -1) translate(0, -24)"/>
+          </svg>
+          <span class="font-semibold">0.7K</span>
+        </button>
+        <button class="flex items-center space-x-2 hover:text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+          </svg>
+          <span class="font-semibold">42.1K</span>
+        </button>
       </div>
     </div>
-  </section>
 
-  <!-- SEO Content Sections -->
-  <div class="relative z-10 container mx-auto px-8 mt-12 space-y-12">
-    
-    <!-- About Bad Ice Cream Game -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">About Bad Ice Cream Game</h2>
-      <div class="text-lg leading-relaxed space-y-4">
-        <p>
-          <strong>Bad Ice Cream</strong> is a beloved arcade puzzle game originally created by <strong>Nitrome</strong>, 
-          a renowned British independent video game developer based in London. First released on December 11, 2010, 
-          this <strong>Bad Ice Cream game</strong> has become a classic in the browser gaming world, captivating players 
-          with its unique pixel art design and innovative gameplay mechanics.
-        </p>
-        <p>
-          The game features <strong>40 challenging levels</strong> where players control adorable ice cream characters 
-          navigating through complex mazes. What sets <strong>Bad Ice Cream</strong> apart is its groundbreaking 
-          ice-creation mechanic - players can strategically build and destroy ice blocks to trap enemies, create safe 
-          passages, and solve intricate puzzles. The <strong>Bad Ice Cream game</strong> supports up to 4 players 
-          simultaneously, making it perfect for multiplayer fun on a single computer.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-          <div class="bg-black/20 p-4 rounded-lg border border-cyan-400/30">
-            <h3 class="text-xl font-semibold mb-3 text-cyan-400">Game Features</h3>
-            <ul class="space-y-2">
-              <li>• <strong>40 unique levels</strong> with increasing difficulty</li>
-              <li>• <strong>Multiple ice cream flavors</strong> (vanilla, chocolate, strawberry, mint)</li>
-              <li>• <strong>Innovative ice block mechanics</strong> for strategic gameplay</li>
-              <li>• <strong>Multiplayer support</strong> for up to 4 players</li>
-              <li>• <strong>Pixel art graphics</strong> with cartoon-style charm</li>
-            </ul>
-          </div>
-          <div class="bg-black/20 p-4 rounded-lg border border-purple-400/30">
-            <h3 class="text-xl font-semibold mb-3 text-purple-400">Nitrome's Legacy</h3>
-            <ul class="space-y-2">
-              <li>• Recognizable <strong>pixel art design</strong> and cartoon appearance</li>
-              <li>• Signature <strong>chiptune music</strong> and sound effects</li>
-              <li>• Classic jingle at the start of every game</li>
-              <li>• Part of the acclaimed <strong>Bad Ice Cream series</strong></li>
-              <li>• Available on <strong>multiple platforms</strong> including mobile</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- SEO Content Sections -->
+    <div class="mt-12 space-y-12">
 
-    <!-- How to Play Bad Ice Cream -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">How to Play Bad Ice Cream</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-cyan-400">Game Objective</h3>
-          <div class="space-y-3 text-lg">
-            <p>Navigate through maze-like levels and <strong>collect all fruits</strong> within the 2-minute time limit. Use your ice cream's special ability to create and destroy ice blocks strategically.</p>
-            <div class="bg-black/20 p-4 rounded-lg">
-              <h4 class="font-semibold text-cyan-300 mb-2">Victory Conditions:</h4>
-              <ul class="space-y-1 text-sm">
-                <li>• Collect ALL fruits in the level</li>
-                <li>• Avoid getting caught by enemies</li>
-                <li>• Complete within the time limit</li>
-                <li>• Navigate to the exit (if applicable)</li>
-              </ul>
-            </div>
-          </div>
+      <!-- Release Date -->
+      <section id="release-date" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">Bad Ice Cream Release Date</h2>
+        <div class="text-lg leading-relaxed space-y-4 text-slate-300">
+          <p>The original <strong>Bad Ice Cream</strong> game was first released on <strong>December 11, 2010</strong>. Developed by the creative team at Nitrome, a British independent game studio famous for its pixel-art browser games, it quickly captured the hearts of players worldwide.</p>
+          <p>Its immediate success cemented its place as a classic arcade puzzle game. The unique combination of fast-paced action, strategic ice-wall building, and charming characters led to the development of a full-blown series, solidifying its legacy in the online gaming community.</p>
         </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-purple-400">Fruit Types & Behaviors</h3>
-          <div class="space-y-3 text-sm">
-            <div class="bg-gradient-to-r from-green-500/10 to-yellow-500/10 p-3 rounded-lg border border-green-400/30">
-              <div class="font-semibold text-green-400 mb-1">🍌 Stationary Fruits</div>
-              <p>Bananas, Grapes, Watermelons, Lemons, Oranges - Easy to collect, stay in one place</p>
+      </section>
+
+      <!-- Versions & Features -->
+      <section id="versions" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">Bad Ice Cream Versions & Features</h2>
+        <div class="text-lg leading-relaxed space-y-8 text-slate-300">
+            <p>The Bad Ice Cream series includes three main installments, each building upon the last with new levels, enemies, and challenges. You can play the entire unblocked trilogy here.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/" class="bg-slate-800 rounded-lg p-4 border-2 border-blue-500 hover:border-blue-400 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🏆</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">Bad Ice Cream 1</h3>
+                  <p class="text-xs text-slate-400">The original 40-level classic</p>
+                </a>
+                <a href="bad-ice-cream-2.html" class="bg-slate-800 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🍦</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">Bad Ice Cream 2</h3>
+                  <p class="text-xs text-slate-400">New levels & enhanced gameplay</p>
+                </a>
+                <a href="bad-ice-cream-3.html" class="bg-slate-800 rounded-lg p-4 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 cursor-pointer group block text-center">
+                  <div class="w-16 h-16 bg-slate-900 rounded-lg mb-3 flex items-center justify-center mx-auto transition-transform duration-300 group-hover:scale-110"><div class="text-3xl">🧊</div></div>
+                  <h3 class="font-bold text-white text-base mb-1">Bad Ice Cream 3</h3>
+                  <p class="text-xs text-slate-400">The ultimate frozen adventure</p>
+                </a>
             </div>
-            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 p-3 rounded-lg border border-red-400/30">
-              <div class="font-semibold text-red-400 mb-1">🥝 Moving Fruits</div>
-              <p><strong>Kiwis:</strong> Slow movement • <strong>Strawberries:</strong> Medium speed • <strong>Pineapples:</strong> Can fly over walls!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">Multiple Characters</h3>
+                  <p class="text-slate-400">Choose from various flavors like vanilla, chocolate, and strawberry. Each character has a unique look but shares the same core abilities.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">Multiplayer Fun</h3>
+                  <p class="text-slate-400">Team up with friends! The game supports up to 4 players on a single computer, making for chaotic and cooperative fun.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                  <h3 class="text-xl font-semibold mb-4 text-white">Strategic Gameplay</h3>
+                  <p class="text-slate-400">This is a game of brains over brawn. Use your ice-making power to trap enemies, build bridges, and protect yourself.</p>
+                </div>
             </div>
-            <div class="bg-gradient-to-r from-purple-500/10 to-blue-500/10 p-3 rounded-lg border border-purple-400/30">
-              <div class="font-semibold text-purple-400 mb-1">🍒 Special Fruits</div>
-              <p><strong>Pears:</strong> Very fast movement • <strong>Cherries:</strong> Can teleport randomly - freeze them first!</p>
-            </div>
-          </div>
         </div>
-      </div>
+      </section>
       
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-pink-400">Interactive Elements</h3>
-          <div class="space-y-3 text-sm">
-            <div class="flex items-center space-x-3 p-2 rounded-lg bg-black/20">
-              <span class="text-red-400">🔥</span>
-              <div>
-                <strong>Hot Tiles & Campfires:</strong> Melt your ice blocks instantly. Campfires can be temporarily frozen but will reignite.
-              </div>
-            </div>
-            <div class="flex items-center space-x-3 p-2 rounded-lg bg-black/20">
-              <span class="text-blue-400">➡️</span>
-              <div>
-                <strong>Arrow Tiles:</strong> Change the direction of ice blocks you create, adding puzzle complexity.
-              </div>
-            </div>
-            <div class="flex items-center space-x-3 p-2 rounded-lg bg-black/20">
-              <span class="text-gray-400">👻</span>
-              <div>
-                <strong>Invisible Tiles:</strong> Block your movement but enemies and fruits can pass through.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold mb-4 text-yellow-400">Enemy Types</h3>
-          <div class="space-y-3 text-sm">
-            <div class="bg-black/20 p-3 rounded-lg">
-              <p class="mb-2"><strong>Varied Enemy Behaviors:</strong></p>
-              <ul class="space-y-1">
-                <li>• <span class="text-green-400">Green Trolls</span> - Basic movement patterns</li>
-                <li>• <span class="text-orange-400">Orange Squids</span> - Unpredictable movement</li>
-                <li>• <span class="text-blue-400">Blue Cows</span> - Charge in straight lines</li>
-                <li>• <span class="text-purple-400">Pot Creatures</span> - Can break through some obstacles</li>
-                <li>• <span class="text-yellow-400">Jumping Ball Towers</span> - Vertical movement</li>
+      <!-- Download -->
+      <section id="download" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">Bad Ice Cream Download</h2>
+        <div class="text-lg leading-relaxed space-y-4 text-slate-300">
+          <p>No <strong>Bad Ice Cream download</strong> is required to play on your PC or Mac! Our website provides the full, unblocked game experience directly in your browser. This is the fastest and safest way to enjoy the game without installing any files.</p>
+          <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+              <h3 class="font-semibold text-blue-400 mb-3 text-xl">Play Instantly Online:</h3>
+              <ul class="space-y-2 text-slate-400">
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>No Installation:</strong> Play instantly without waiting for a download.</li>
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>Always Unblocked:</strong> Access the game from school or work networks that might block downloads.</li>
+                <li class="flex items-start"><span class="mr-2 mt-1">✅</span><strong>Safe & Secure:</strong> No risk of viruses or malware from unofficial download files.</li>
               </ul>
-              <p class="mt-2 text-gray-300">💡 <em>Trap enemies with ice blocks, but remember they can break free over time!</em></p>
-            </div>
           </div>
+          <p>For mobile users, Nitrome has officially released the game on app stores. You can search for "Bad Ice Cream" on the Apple App Store or Google Play Store to download it safely on your iOS or Android device.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Game Features -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">Bad Ice Cream Game Features</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-black/20 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-4 text-cyan-400">Multiple Characters</h3>
-          <p class="text-lg">
-            <strong>Bad Ice Cream</strong> offers various ice cream flavors to play as, including vanilla, chocolate, 
-            strawberry, and mint. Each character in the <strong>Bad Ice Cream game</strong> has unique visual appeal 
-            while maintaining the same core gameplay mechanics.
-          </p>
-        </div>
-        <div class="bg-black/20 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-4 text-purple-400">Challenging Levels</h3>
-          <p class="text-lg">
-            The <strong>Bad Ice Cream</strong> series features dozens of meticulously designed levels, each presenting 
-            unique challenges and obstacles. As you progress through the <strong>Bad Ice Cream game</strong>, levels 
-            become increasingly complex with more enemies and intricate maze designs.
-          </p>
-        </div>
-        <div class="bg-black/20 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-4 text-pink-400">Strategic Gameplay</h3>
-          <p class="text-lg">
-            <strong>Bad Ice Cream</strong> combines quick reflexes with strategic thinking. Players must plan their 
-            ice block placement carefully to trap enemies and create safe passages while collecting fruits in each 
-            <strong>Bad Ice Cream</strong> level.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tips and Strategies -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">Pro Tips for Bad Ice Cream Mastery</h2>
-      <div class="text-lg leading-relaxed space-y-6">
-        <p>
-          Mastering <strong>Bad Ice Cream</strong> requires understanding the game's unique mechanics and developing 
-          effective strategies. Here are essential tips from experienced players to excel in the <strong>Bad Ice Cream game</strong>:
-        </p>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div class="space-y-6">
-            <div class="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-6 rounded-lg border border-cyan-400/30">
-              <h3 class="text-xl font-semibold mb-4 text-cyan-400 flex items-center">
-                <span class="mr-2">🧊</span> Strategic Ice Placement
-              </h3>
-              <div class="space-y-3 text-base">
-                <p>
-                  In <strong>Bad Ice Cream</strong>, timing your ice block creation is crucial. Use ice blocks to trap 
-                  enemies temporarily while you collect nearby fruits. Remember that enemies can break through ice blocks 
-                  over time, so always plan your escape routes.
-                </p>
-                <ul class="space-y-2 text-sm bg-black/20 p-4 rounded-lg">
-                  <li>• <strong>Create barriers</strong> to redirect enemy movement paths</li>
-                  <li>• <strong>Build temporary shelters</strong> when surrounded by enemies</li>
-                  <li>• <strong>Use walls strategically</strong> to corner fast-moving fruits</li>
-                  <li>• <strong>Break ice quickly</strong> to create emergency escape routes</li>
-                </ul>
+      </section>
+      
+      <!-- Walkthrough -->
+      <section id="walkthrough" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">Bad Ice Cream Walkthrough</h2>
+        <div class="space-y-10">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4 text-white text-center">Video Walkthrough</h3>
+              <p class="text-lg text-slate-300 max-w-3xl mx-auto mb-6 text-center">Watch this comprehensive video walkthrough to master the game's mechanics from level 1 to 40 and see pro-level strategies in action.</p>
+              <div class="relative max-w-3xl w-full mx-auto">
+                <div class="border border-slate-700 rounded-2xl p-2 bg-slate-900/50">
+                  <iframe class="rounded-xl" width="100%" height="400" src="https://www.youtube.com/embed/TptbiYnyQ7M" title="Bad Ice Cream Gameplay Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                </div>
               </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-white text-center">Gameplay Screenshots</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="images/GameScreenshot1.jpg" alt="Bad Ice Cream Gameplay Screenshot 1" class="w-full rounded-md"></div>
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="images/GameScreenshot2.jpg" alt="Bad Ice Cream Gameplay Screenshot 2" class="w-full rounded-md"></div>
+                  <div class="bg-slate-900/50 rounded-lg p-2 border border-slate-700"><img src="images/GameScreenshot3.jpg" alt="Bad Ice Cream Gameplay Screenshot 3" class="w-full rounded-md"></div>
+                </div>
             </div>
             
-            <div class="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-lg border border-purple-400/30">
-              <h3 class="text-xl font-semibold mb-4 text-purple-400 flex items-center">
-                <span class="mr-2">🍒</span> Fruit Collection Mastery
-              </h3>
-              <div class="space-y-3 text-base">
-                <p>
-                  Plan your fruit collection route carefully to minimize backtracking and maximize efficiency. 
-                  Different fruits require different approaches in the <strong>Bad Ice Cream game</strong>.
-                </p>
-                <ul class="space-y-2 text-sm bg-black/20 p-4 rounded-lg">
-                  <li>• <strong>Stationary fruits first:</strong> Easy targets (bananas, grapes, watermelons)</li>
-                  <li>• <strong>Slow movers next:</strong> Kiwis and strawberries are manageable</li>
-                  <li>• <strong>Fast fruits require strategy:</strong> Corner pears using ice walls</li>
-                  <li>• <strong>Cherries need special attention:</strong> Freeze them before they teleport!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-gradient-to-r from-pink-500/10 to-red-500/10 p-6 rounded-lg border border-pink-400/30">
-              <h3 class="text-xl font-semibold mb-4 text-pink-400 flex items-center">
-                <span class="mr-2">👾</span> Enemy Behavior Patterns
-              </h3>
-              <div class="space-y-3 text-base">
-                <p>
-                  Each enemy type in <strong>Bad Ice Cream</strong> has distinct movement patterns. Study these behaviors 
-                  to predict their movements and use your ice-creating abilities effectively.
-                </p>
-                <ul class="space-y-2 text-sm bg-black/20 p-4 rounded-lg">
-                  <li>• <strong>Green Trolls:</strong> Move in predictable straight lines</li>
-                  <li>• <strong>Squids:</strong> Change direction randomly - stay alert!</li>
-                  <li>• <strong>Cows:</strong> Charge aggressively but can be easily trapped</li>
-                  <li>• <strong>Jumping enemies:</strong> Time your movements with their jumps</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div class="bg-gradient-to-r from-yellow-500/10 to-orange-500/10 p-6 rounded-lg border border-yellow-400/30">
-              <h3 class="text-xl font-semibold mb-4 text-yellow-400 flex items-center">
-                <span class="mr-2">⚡</span> Advanced Techniques
-              </h3>
-              <div class="space-y-3 text-base">
-                <p>
-                  Master these advanced techniques to achieve high scores and complete the most challenging levels 
-                  in <strong>Bad Ice Cream</strong>.
-                </p>
-                <ul class="space-y-2 text-sm bg-black/20 p-4 rounded-lg">
-                  <li>• <strong>Ice-wall dancing:</strong> Rapidly create/destroy ice while moving</li>
-                  <li>• <strong>Enemy herding:</strong> Guide multiple enemies into one area</li>
-                  <li>• <strong>Campfire timing:</strong> Freeze campfires during safe moments</li>
-                  <li>• <strong>Speed routing:</strong> Optimize paths for time-based challenges</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 p-6 rounded-lg border border-indigo-400/30 mt-8">
-          <h3 class="text-xl font-semibold mb-4 text-indigo-400 flex items-center">
-            <span class="mr-2">🏆</span> Multiplayer Coordination Tips
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 class="font-semibold text-indigo-300 mb-2">Team Strategy</h4>
-              <ul class="space-y-1 text-sm">
-                <li>• Assign different areas to each player</li>
-                <li>• Coordinate ice placement to create team barriers</li>
-                <li>• One player distracts enemies while others collect fruits</li>
-                <li>• Communicate about dangerous areas and enemy positions</li>
-              </ul>
+                <h3 class="text-2xl font-semibold mb-6 text-white text-center">How to Play Guide</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div>
+                      <h4 class="text-xl font-semibold mb-4 text-white">Objective & Controls</h4>
+                      <div class="space-y-3 text-slate-300">
+                        <p>Your goal is to <strong>collect all the fruits</strong> in each level before the timer runs out. Use your ice-blasting ability to create or destroy ice blocks to trap enemies and create paths.</p>
+                      </div>
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-slate-800 rounded-lg p-4 border border-slate-700 text-center"><div class="text-blue-400 text-2xl mb-2">🎮</div><h5 class="font-semibold text-white text-sm mb-3">Player 1</h5><div class="space-y-2 text-xs"><div class="flex items-center justify-between"><span>Move:</span><kbd class="px-2 py-1 text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-700 rounded">ARROWS</kbd></div><div class="flex items-center justify-between"><span>Ice:</span><kbd class="px-2 py-1 text-xs font-semibold text-slate-300 bg-slate-900 border border-slate-700 rounded">SPACE</kbd></div></div></div>
+                        <div class="bg-slate-800 rounded-lg p-4 border border-slate-700 text-center"><div class="text-blue-400 text-2xl mb-2">👥</div><h5 class="font-semibold text-white text-sm mb-3">Multiplayer</h5><div class="space-y-2 text-xs"><div>P2: <kbd class="px-2 py-1 bg-slate-900 border border-slate-700 rounded text-xs font-semibold text-slate-300">WASD+F</kbd></div><div>P3: <kbd class="px-2 py-1 bg-slate-900 border border-slate-700 rounded text-xs font-semibold text-slate-300">IJKL+U</kbd></div></div></div>
+                      </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-lg border border-slate-700">
+                        <h4 class="text-xl font-semibold mb-4 text-white">Enemy Types</h4>
+                        <ul class="space-y-2 text-sm text-slate-400">
+                          <li>• <span class="font-semibold text-green-400">Green Trolls:</span> Basic, predictable movement.</li>
+                          <li>• <span class="font-semibold text-orange-400">Orange Squids:</span> Unpredictable, change direction randomly.</li>
+                          <li>• <span class="font-semibold text-blue-400">Blue Cows:</span> Charge in straight lines once they spot you.</li>
+                          <li>• <span class="font-semibold text-purple-400">Pot Creatures:</span> Can break through single ice blocks.</li>
+                        </ul>
+                        <p class="mt-4 text-xs text-slate-500">💡 <em>Remember: All enemies can eventually break out of ice traps, so be quick!</em></p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <h4 class="font-semibold text-indigo-300 mb-2">Avoid Common Mistakes</h4>
-              <ul class="space-y-1 text-sm">
-                <li>• Don't block your teammates with ice walls</li>
-                <li>• Avoid clustering all players in one area</li>
-                <li>• Watch the timer - time management is crucial</li>
-                <li>• Don't forget about special tiles (hot tiles, arrows)</li>
-              </ul>
-            </div>
-          </div>
         </div>
-        
-        <div class="bg-black/20 p-6 rounded-lg border border-gray-400/30 mt-6">
-          <h3 class="text-xl font-semibold mb-4 text-gray-300 flex items-center">
-            <span class="mr-2">💡</span> Golden Rules for Success
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-            <div class="text-center p-4 bg-cyan-500/5 rounded-lg">
-              <div class="text-2xl mb-2">🎯</div>
-              <h4 class="font-semibold text-cyan-400 mb-1">Plan Before Action</h4>
-              <p>Always survey the level before making your first move. Identify fruit locations, enemy patterns, and safe zones.</p>
-            </div>
-            <div class="text-center p-4 bg-purple-500/5 rounded-lg">
-              <div class="text-2xl mb-2">⏰</div>
-              <h4 class="font-semibold text-purple-400 mb-1">Time Is Everything</h4>
-              <p>With only 2 minutes per level, efficiency is key. Don't waste time on risky moves unless absolutely necessary.</p>
-            </div>
-            <div class="text-center p-4 bg-pink-500/5 rounded-lg">
-              <div class="text-2xl mb-2">🔄</div>
-              <h4 class="font-semibold text-pink-400 mb-1">Practice Makes Perfect</h4>
-              <p>The difficulty ramps up significantly after level 25. Practice the fundamentals on easier levels first.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Game History and Legacy -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">The Legacy of Bad Ice Cream</h2>
-      <div class="text-lg leading-relaxed space-y-4">
-        <p>
-          <strong>Bad Ice Cream</strong> was originally developed by Nitrome, a renowned game development studio known 
-          for creating innovative browser-based games. Since its debut, the <strong>Bad Ice Cream game</strong> has 
-          spawned multiple sequels and variations, each adding new mechanics and challenges to the core gameplay formula.
-        </p>
-        <p>
-          The success of <strong>Bad Ice Cream</strong> lies in its perfect balance of simple controls and complex 
-          strategic gameplay. The <strong>Bad Ice Cream game</strong> has influenced numerous other puzzle arcade games 
-          and remains a favorite among casual and competitive players alike. Its colorful graphics, catchy soundtrack, 
-          and addictive gameplay have made <strong>Bad Ice Cream</strong> a timeless classic in the online gaming community.
-        </p>
-        <p>
-          Today, <strong>Bad Ice Cream</strong> continues to attract new players while maintaining its loyal fanbase. 
-          The game's accessibility across different platforms and devices ensures that the <strong>Bad Ice Cream game</strong> 
-          remains relevant in the modern gaming landscape, introducing new generations to its unique blend of puzzle-solving 
-          and arcade action.
-        </p>
-      </div>
-    </section>
+      <!-- FAQ Section -->
+      <section id="faq" class="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 scroll-mt-20">
+        <h2 class="text-3xl font-bold orbitron text-white mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-6"><h3 class="text-xl font-semibold mb-2 text-white">Is Bad Ice Cream free to play?</h3><p class="text-lg text-slate-300">Yes! <strong>Bad Ice Cream</strong> is completely free to play online. You can enjoy the full game experience without any downloads or registrations.</p></div>
+            <div class="border-l-4 border-blue-500 pl-6"><h3 class="text-xl font-semibold mb-2 text-white">How many levels are in Bad Ice Cream?</h3><p class="text-lg text-slate-300">The original <strong>Bad Ice Cream</strong> features <strong>40 challenging levels</strong>. The difficulty increases as you progress, with a 2-minute time limit for each.</p></div>
+            <div class="border-l-4 border-blue-500 pl-6"><h3 class="text-xl font-semibold mb-2 text-white">Can I play Bad Ice Cream with friends?</h3><p class="text-lg text-slate-300">Absolutely! <strong>Bad Ice Cream</strong> supports up to <strong>4 players</strong> on the same computer for local multiplayer fun.</p></div>
+        </div>
+      </section>
 
-    <!-- FAQ Section -->
-    <section class="neon-border-premium neon-glow p-8">
-      <h2 class="text-3xl font-bold orbitron neon-text-premium mb-6">Frequently Asked Questions</h2>
-      <div class="space-y-6">
-        <div class="border-l-4 border-cyan-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">Is Bad Ice Cream free to play?</h3>
-          <p class="text-lg">
-            Yes! <strong>Bad Ice Cream</strong> is completely free to play online. You can enjoy the full 
-            <strong>Bad Ice Cream game</strong> experience without any downloads, payments, or registrations required.
-          </p>
-        </div>
-        <div class="border-l-4 border-purple-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">How many levels are in Bad Ice Cream?</h3>
-          <p class="text-lg">
-            The original <strong>Bad Ice Cream</strong> features <strong>40 challenging levels</strong>. The difficulty 
-            increases progressively, becoming particularly challenging around level 25 and quite intense by level 30. 
-            Each level has a 2-minute time limit to complete.
-          </p>
-        </div>
-        <div class="border-l-4 border-pink-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">How do I play Bad Ice Cream with friends?</h3>
-          <p class="text-lg">
-            <strong>Bad Ice Cream</strong> supports up to <strong>4 players simultaneously</strong> on the same computer! 
-            To activate multiplayer mode, press <strong>U</strong> for Player 3 or <strong>1</strong> for Player 4 during 
-            character selection. Each player controls their own ice cream character with different key combinations.
-          </p>
-        </div>
-        <div class="border-l-4 border-yellow-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">What ice cream flavors can I choose from?</h3>
-          <p class="text-lg">
-            <strong>Bad Ice Cream</strong> offers three delicious flavors: <strong>Vanilla, Chocolate, and Strawberry</strong>. 
-            Each flavor has the same gameplay mechanics but different visual appearances, so choose your favorite!
-          </p>
-        </div>
-        <div class="border-l-4 border-green-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">What makes Bad Ice Cream unique?</h3>
-          <p class="text-lg">
-            <strong>Bad Ice Cream</strong> stands out with its innovative <strong>ice block creation mechanic</strong>. 
-            Players can strategically build and destroy ice blocks to trap enemies, create safe passages, and solve puzzles. 
-            This dynamic environment manipulation makes each level a unique strategic challenge.
-          </p>
-        </div>
-        <div class="border-l-4 border-red-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">How do I deal with fast-moving fruits like cherries?</h3>
-          <p class="text-lg">
-            <strong>Cherries</strong> are the trickiest fruits as they can teleport randomly around the map. The best 
-            strategy is to <strong>freeze them with ice blocks first</strong>, then quickly collect them before they 
-            teleport again. Timing and positioning are crucial!
-          </p>
-        </div>
-        <div class="border-l-4 border-blue-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">Can I play Bad Ice Cream on mobile devices?</h3>
-          <p class="text-lg">
-            Yes! <strong>Bad Ice Cream</strong> is available on mobile platforms and was released for iPhone and Android 
-            on Nitrome Touchy. The game works well on both desktop browsers and mobile devices, offering the same 
-            great gameplay experience across platforms.
-          </p>
-        </div>
-        <div class="border-l-4 border-indigo-400 pl-6">
-          <h3 class="text-xl font-semibold mb-2">What happens if I run out of time?</h3>
-          <p class="text-lg">
-            If you don't collect all fruits within the <strong>2-minute time limit</strong>, you'll fail the level and 
-            need to restart. The time pressure adds excitement and encourages efficient route planning and quick 
-            decision-making in your ice cream strategy.
-          </p>
-        </div>
-      </div>
-    </section>
+    </div>
+  </main>
 
-  </div>
+  <footer class="relative z-10 mt-12 py-8 text-center text-slate-500 text-sm">
+    <p>&copy; 2024 Bad Ice Cream Games. Game by Nitrome. Play responsibly!</p>
+  </footer>
 
   <!-- Scripts -->
   <script>
-    // Game loading simulation
-    function simulateGameLoading() {
-      const loadingOverlay = document.getElementById('loadingOverlay');
-      const progressFill = document.getElementById('progressFill');
-      const loadingText = document.querySelector('.loading-text');
-      
-      let progress = 0;
-      const loadingSteps = [
-        { text: 'Initializing game engine...', delay: 500 },
-        { text: 'Loading ice cream assets...', delay: 800 },
-        { text: 'Setting up gameplay mechanics...', delay: 600 },
-        { text: 'Preparing frosty challenges...', delay: 700 },
-        { text: 'Almost ready to play!', delay: 400 }
-      ];
-      
-      let currentStep = 0;
-      
-      function updateProgress() {
-        if (currentStep < loadingSteps.length) {
-          loadingText.textContent = loadingSteps[currentStep].text;
-          progress += 20;
-          progressFill.style.width = progress + '%';
-          
-          setTimeout(() => {
-            currentStep++;
-            updateProgress();
-          }, loadingSteps[currentStep].delay);
-        } else {
-          // Loading complete
-          setTimeout(() => {
-            loadingOverlay.classList.add('hidden');
-          }, 500);
-        }
-      }
-      
-      updateProgress();
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Language switcher
+    function changeLanguage(url) {
+      window.location.href = url;
     }
-    
-    // Start loading simulation when page loads
-    window.addEventListener('load', () => {
-      simulateGameLoading();
-    });
-    
-    // Fullscreen functionality
-    document.getElementById('fullscreenBtn').addEventListener('click', () => {
-      const gameFrame = document.getElementById('gameFrame');
-      if (gameFrame.requestFullscreen) {
-        gameFrame.requestFullscreen();
-      } else if (gameFrame.mozRequestFullScreen) {
-        gameFrame.mozRequestFullScreen();
-      } else if (gameFrame.webkitRequestFullscreen) {
-        gameFrame.webkitRequestFullscreen();
-      } else if (gameFrame.msRequestFullscreen) {
-        gameFrame.msRequestFullscreen();
-      } else {
-        const src = gameFrame.src;
-        window.open(src, '_blank');
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      
+      if (mobileMenu && mobileMenuBtn && !mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
       }
     });
-    
-    // Restart functionality
-    document.getElementById('restartBtn').addEventListener('click', () => {
-      const gameFrame = document.getElementById('gameFrame');
-      const currentSrc = gameFrame.src;
-      gameFrame.src = '';
-      
-      // Show loading overlay again
-      const loadingOverlay = document.getElementById('loadingOverlay');
-      loadingOverlay.classList.remove('hidden');
-      
-      setTimeout(() => {
-        gameFrame.src = currentSrc;
-        simulateGameLoading();
-      }, 100);
-    });
 
-    // Button hover effects
-    document.querySelectorAll('.btn-premium').forEach(btn => {
-      btn.addEventListener('mouseenter', () => {
-        btn.style.transform = 'translateY(-2px) scale(1.02)';
-      });
-      
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
-    // Game card click handlers
-    const gameLinks = {
-      'Bad Ice Cream 2': 'https://kdata1.com/2022/11/bad-ice-cream-2/',
-      'Bad Ice Cream 3': 'https://kdata1.com/2022/12/bad-ice-cream-3/'
-    };
-
-    document.querySelectorAll('.game-card').forEach(card => {
-      card.addEventListener('click', () => {
-        const gameTitle = card.querySelector('h4').textContent;
-        const gameUrl = gameLinks[gameTitle];
-        
-        if (gameUrl) {
-          // Open game in new tab
-          window.open(gameUrl, '_blank');
-        }
-      });
-      
-      // Add click cursor style
-      card.style.cursor = 'pointer';
+    // Responsive navigation adjustments
+    window.addEventListener('resize', () => {
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (window.innerWidth >= 768 && mobileMenu) {
+        mobileMenu.classList.add('hidden');
+      }
     });
   </script>
 </body>
